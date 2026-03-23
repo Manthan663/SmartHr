@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartHR</title>
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+          
+</head>
+
+
+<body class="bg-[#0B1E2D] text-white min-h-screen overflow-x-hidden">
+
+
+  <div class ="sticky top-0 z-20 w-full bg-[#262626] text-white">
+      <div class="max-w-7xl mx-auto flex items-center justify-between py-3">
+        <div class = "flex items-center gap-1">
+          <span class="text-green-500 font-bold text-lg">enveto</span>
+          <span class = "text-gray-300">market</span>
+         
+        </div>
+      <div class="text-white justify-between">
+        <button class="bg-lime-400 text-white px-4 py-1 rounded-lg hover:bg-lime-500">Buy Now
+</button>
+      </div>
+      </div>
+  </div>
+
+
+   <header class="sticky top-14 z-20 bg-white rounded-xl mx-auto mt-6 max-w-7xl transition-all duration-300">
+  
+  <div class="flex items-center justify-between px-6 py-3 lg:w-full md:px-1 md:py-1">
+
+    <!-- Logo -->
+    <div>
+      <img src="https://smarthr.dreamstechnologies.com/react/assets/img/logo.svg"
+           class="w-40 h-10">
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex gap-7 font-medium">
+      <a href="#" class="text-black hover:text-orange-500 hover:underline decoration-orange-500">Home</a>
+      <a href="#demos" class="text-black  hover:text-orange-500 hover:underline decoration-orange-500">Demos</a>
+      <a href="#inner" class="text-black  hover:text-orange-500 hover:underline decoration-orange-500">Inner Pages</a>
+      <a href="#feature" class="text-black hover:text-orange-500 hover:underline decoration-orange-500">Features</a>
+      <a href="#pricing" class="text-black hover:text-orange-500 hover:underline decoration-orange-500">Pricing</a>
+      <a href="#faq" class="text-black hover:text-orange-500 hover:underline decoration-orange-500">FAQ</a>
+    </nav>
+
+    <!-- Desktop Button -->
+    <button class="hidden md:block bg-black text-white px-5 py-2 rounded-lg">
+      <i class="fa fa-shopping-cart p-2" aria-hidden="true"></i>Buy Template
+    </button>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-2xl text-black">
+      ☰
+    </button>
+
+  </div>
+
+<div id="sidebar" class="fixed top-0 right-[-100%] w-72 h-full bg-white shadow-lg transition-all duration-200">
+  <div class="flex justify-between items-center mt-6">
+     <img src="../images/logo.svg">
+     <button id="clsbtn" class="text-white text-xl bg-orange-500 rounded-full px-4 py-2 duration-300">X</button>
+  </div>
+
+  <div class="flex flex-col gap-4 font-medium mt-3">
+    <a href="#" class="text-black hover:text-orange-400 hover:underline decoration-orange-500 px-4">Home</a>
+
+    <a href="#demos" class="text-black hover:text-orange-400 hover:underline decoration-orange-500 px-4">Demos</a>
+    
+    <a href="#inner" class="text-black hover:text-orange-400 hover:underline decoration-orange-500 px-4">Inner Pages</a>
+    <a href="#feature" class="text-black hover:text-orange-400 hover:underline decoration-orange-500 px-4">Features</a>
+    <a href="#pricing" class="text-black hover:text-orange-400 hover:underline decoration-orange-500 px-4">Pricing</a>
+    <a href="#faq" class="text-black hover:text-orange-400 hover:underline decoration-orange-500 px-4">Faq</a>
+  </div>
+
+  <button class="absolute right-10 p-4 bg-black text-white px-5 py-2 rounded-lg w-[200px]"><i class="fa fa-shopping-cart p-2" aria-hidden="true"></i>Buy Template</button>
+
+</div>
+  
+</header>
+ 
+  <!-- Hero Section -->
+  <section data-aos="slide-up" class=" relative min-h-screen flex items-start justify-center pt-20 px-6 text-center">
+    
+      <img src = "../images/banner-bg-01.svg" class=" absolute left-28 top-32 w-32 hidden lg:block">
+     
+      <img src = "../images/banner-bg-02.svg"  class=" absolute right-28 top-32 w-32 hidden lg:block">
+   <div>    
+    <div class="max-w-4xl">
+
+      <h2 class="text-5xl md:text-7xl font-bold leading-tight text-center ">
+        Professional HR <br>
+        Management <br>
+        Template with 
+        <span class="text-accent">React & Bootstrap</span>
+      </h2>
+    <div>
+      <p class="mt-7 text-lg text-gray-300">A complete HR solution designed to enhance your recruitment process with ease.</p>
+      <div class="mt-6 flex flex-col sm:flex-row  justify-center gap-4">
+      
+       
+        <button class="bg-white text-black px-8 py-3 rounded-lg font-semibold
+         hover:text-black transition duration-300">
+        <img src = "../images/react.svg" class="w-7 h-6 inline-block mr-1">
+          React
+        </button>
+
+        <button class=" bg-white text-black px-6 py-3 rounded-lg font-semibold 
+            hover:text-black transition duration-300">
+           <img src = "../images/nextjs.svg" class="w-7 h-5 inline-block mr-1">
+          Next Js
+        </button>
+      </div>
+      </div>
+    </div>
+  </div>
+</section> 
+  
+  
+
+   <div class = "flex justify-center  -mt-40  px-6">
+
+       <div class="relative">
+       
+     <img src = "../images/react-icon.svg" class="absolute right-0 top-0  animate-float">
+     
+     <img src="../images/banner-img.webp" class="w-full px-10 max-w-4xl rounded-lg">
+     
+    </div>
+  </div>
+
+
+<img src = "../images/sec-bg-03.webp" class="absolute right-0">
+<div class="bg-white -mt-48 pt-64 pb-28  text-center">
+    <h4 class = "text-orange-500 font-medium pb-24 mb-3">Overview</h4>
+    <div class="flex justify-center gap-1">
+      <div class="w-4 h-0.5 rounded-full bg-black"></div>
+      <div class="w-8 h-0.5 rounded-full bg-gray-500"></div>
+    </div>
+    <h2 class = "font-bold text-3xl text-gray-800 -mt-24">All-in-One HR Solution for Growing Businesses</h2>
+
+  <section class = "relative bg-gray-50 py-20 p-2">
+    <img src = "../images/sec-bg-04.webp" class="absolute left-0 bottom-3">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-sm p-6 hover:-translate-y-3 transition">
+        <img src="../images/overview-01.webp"
+             class="rounded-xl  w-full h-48 object-cover pb-5">
+
+        <h3 class="text-lg font-semibold text-gray-800 mb-2 ">
+          Effortless Job Listings
+        </h3>
+
+        <p class="text-gray-600 text-sm sans-serif">
+          Simplify your recruitment efforts by creating and managing job postings
+        </p>
+      </div>
+
+
+     <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-sm p-6 hover:-translate-y-3 transition-transform">
+        <img src="../images/overview-02.webp"
+             class="rounded-xl  w-full h-48 object-cover pb-6 ">
+
+        <h3 class="text-lg font-semibold text-gray-800 mb-2 ">
+          Real-Time Analytics
+        </h3>
+
+        <p class="text-gray-600 text-sm sans-serif">
+         Access insights on employee performance, attendance, and more
+        </p>
+      </div>
+
+
+
+       <!-- Card 3 -->
+        <div class="bg-white rounded-2xl shadow-sm p-6 hover:-translate-y-3 transition-transform">
+        <img src="../images/overview-03.webp"
+             class="rounded-xl  w-full h-48 object-cover pb-5">
+
+        <h3 class="text-lg font-semibold text-gray-800 mb-2 ">
+          Candidate Tracking
+        </h3>
+
+        <p class="text-gray-600 text-sm sans-serif">
+          Streamline and manage your entire hiring pipeline with ease
+        </p>
+      </div>
+
+
+
+       <!-- Card 4 -->
+        <div class="bg-white rounded-2xl shadow-sm p-6 hover:-translate-y-3 transition-transform">
+        <img src="../images/overview-04.webp"
+             class="rounded-xl  w-full h-48 object-cover pb-5">
+
+        <h3 class="text-lg font-semibold text-gray-800 mb-2 ">
+          Customizable Theme Settings
+        </h3>
+
+        <p class="text-gray-600 text-sm sans-serif">
+          Adjust and customize your platform with intuitive theme settings
+        </p>
+      </div>
+    </div>
+  </div>
+  </section >
+
+<section class = "bg-gray-50 pt-6 pb-24">
+  <div class = " max-w-7xl  px-6 mx-auto text-center">
+
+    <p class = "text-orange-500 font-medium ">Use Case</p>
+    <div class="flex justify-center gap-1">
+      <div class="w-6 h-0.5 rounded-full bg-black"></div>
+      <div class="w-9 h-0.5 rounded-full bg-green-200"></div>
+    </div>
+    <h2 class="font-bold text-4xl text-gray-900 ">Designed for Hr Professionals</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-10">
+
+  <!-- Card 1 -->
+  <div class="space-y-4 text-center">
+    <div class="w-36 h-36 mx-auto flex items-center justify-center bg-gray-100 rounded-2xl">
+      <img src="../images/use-case-icon-01.svg" class="w-10">
+    </div>
+    <h3 class="text-black font-bold text-lg">Small Teams</h3>
+    <p class="text-gray-900 pb-10">
+      Effortlessly manage recruitment, attendance, and payroll all in one centralized platform
+    </p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="space-y-4 text-center">
+    <div class="w-36 h-36 mx-auto flex items-center justify-center bg-gray-100 rounded-2xl">
+      <img src="../images/use-case-icon-02.svg" class="w-10">
+    </div>
+    <h3 class="text-black font-bold text-lg">Growing Teams</h3>
+    <p class="text-gray-900 pb-10">
+      Scale your HR operations with advanced features like analytics and reporting.
+    </p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="space-y-4 text-center">
+    <div class="w-36 h-36 mx-auto flex items-center justify-center rounded-2xl bg-gray-100">
+      <img src="../images/use-case-icon-03.svg" class="w-10">
+    </div>
+    <h3 class="text-black font-bold text-lg">Large Enterprises</h3>
+    <p class="text-gray-900 pb-10">
+      Streamline operations across multiple departments with collaborative tools.
+    </p>
+  </div>
+</div>
+
+<div class = "gap-4 flex justify-center">
+<button class="bg-black rounded-lg px-6 py-2 hover:bg-black text-white font-semibold">
+  <i class="fas fa-play-circle text-white-500 mr-2"></i>
+  Live Demo </button>
+<button class="bg-orange-500 rounded-lg px-4 py-2 hover:bg-orange-600  text-white font-semibold">
+    <i class="fas fa-shopping-cart text-white-500 mr-2"></i>
+ Buy Full Product </button>
+</div>
+</div>  
+</section>
+
+</div>
+
+<section id = "demos" class = "relative bg-gray-900 pt-16 pb-24 text-center">
+
+<img src = "../images/sec-bg-05.webp" class="absolute right-0 top-0   w-50">
+
+<div class = "max-w-7xl mx-auto px-6"></div>
+ 
+ <p class="text-orange-400 font-semibold">Demos</p>
+  <div class="flex justify-center gap-1">
+      <div class="bg-white w-3 h-0.5 rounded-full"></div>
+      <div class="bg-white w-9 h-0.5 rounded-full"></div>
+    </div>
+ 
+ <h2 class="text-white font-bold text-2xl mb-12">See the Template in Action</h2>
+  
+ <div class="flex flex-wrap justify-center gap-8">
+   <button  class="btns btn-1 bg-orange-500 rounded-lg text-white  hover:text-white duration-300 hover:bg-orange-500 px-6 py-2 font-semibold">Admin Dashboard</button>
+   <button  class="btns btn-2 bg-white rounded-lg text-black  hover:text-white duration-300 hover:bg-orange-500 px-6 py-2 font-semibold">Employee Dashboard</button>
+   <button  class="btns btn-3 bg-white rounded-lg text-black hover:text-white duration-300 hover:bg-orange-500 px-6 py-2 font-semibold">Deals Dashboard</button>
+   <button  class="btns btn-4 bg-white rounded-lg text-black hover:text-white duration-300 hover:bg-orange-500 px-6 py-2 font-semibold">Leads Dashboard</button>
+   <button  class="btns btn-5 bg-white rounded-lg text-black hover:text-white duration-300 hover:bg-orange-500 px-6 py-2 font-semibold">Super Admin</button>
+
+ </div>
+
+ <div class=" flex items-center justify-center p-6">
+    <img id = "dashboard-img" src = "../images/dashboard-01.webp" class="w-full max-w-4xl p-2 
+     hover:-translate-y-3 transition-transform duration-300">
+ </div>
+
+
+<img src = "../images/sec-bg-06.webp" class="absolute bottom-0 -translate-top-1/4  w-50">
+ <div class=" flex justify-center">
+   
+  <button class="bg-orange-500 hover:bg-orange-600 rounded-lg px-6 py-2">
+    <i class="fas fa-shopping-cart text-white-500 mr-2"></i>
+    Buy Template
+  </button>
+ </div>
+
+</section>
+
+<section class="bg-white pb-56 text-center pt-24">
+  <div class="max-w-10xl mx-auto px-6">
+    <p class="text-orange-500">Key Benefits</p>
+     <div class="flex justify-center gap-1">
+      <div class="bg-gray-800 w-8 h-0.5 rounded-full"></div>
+      <div class="bg-green-200 w-12 h-0.5 rounded-full"></div>
+    </div>
+    <h3 class="text-black font-bold text-2xl">Why Choose Our HR Admin Template?</h3>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+     <div class="space-y-10">
+
+  <!-- Item 1 -->
+ <div class="flex items-start gap-5">
+    <div class="w-12 h-12 flex items-center justify-center
+                bg-orange-500 text-white font-bold rounded-full">
+      1
+    </div>
+    <div>
+      <h4 class="flex text-xl font-bold text-gray-900">
+        Boost Productivity
+      </h4>
+      <p class="text-gray-600 mt-3 leading-relaxed max-w-xl">
+        Automate repetitive tasks like candidate tracking, job postings, and payroll management to save time and focus on strategic HR activities.
+      </p>
+    </div>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="flex items-start gap-5">
+    <div class="w-12 h-12 flex items-center justify-center
+                bg-orange-500 text-white font-bold rounded-full">
+      2
+    </div>
+    <div>
+      <h4 class="flex text-xl font-bold text-gray-900">
+        Save Time
+      </h4>
+      <p class="text-gray-600 mt-3 leading-relaxed max-w-xl">
+       With everything integrated into one platform, you can manage job listings, employee records, performance reviews, and more in just a few clicks
+      </p>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="flex items-start gap-5">
+    <div class="w-12 h-12 flex items-center justify-center
+                bg-orange-500 text-white font-bold rounded-full">
+      3
+    </div>
+    <div>
+      <h4 class="flex text-xl font-bold text-gray-900">
+        Customizable and Scalable
+      </h4>
+      <p class="text-gray-600 mt-3 leading-relaxed max-w-xl">
+        Whether you are a startup or a large enterprise, you can customize the
+        platforms features, layouts, and reporting capabilities to match your
+        specific requirements.
+      </p>
+    </div>
+  </div>
+
+  <!-- Item 4 -->
+  <div class="flex items-start gap-5">
+    <div class="w-12 h-12 flex items-center justify-center
+                bg-orange-500 text-white font-bold rounded-full">
+      4
+    </div>
+    <div>
+      <h4 class=" flex text-xl font-bold text-gray-900">
+        Enhanced Collaboration
+      </h4>
+      <p class="text-gray-600 mt-3 leading-relaxed max-w-xl">
+        Share documents, track progress on tasks, and ensure smooth communication
+        across departments to meet your organizational goals.
+      </p>
+    </div>
+  </div>
+
+</div>
+  
+  <div class=" relative py-15 pb-20 flex gap-2 bg-gray-50">
+  <img src = "../images/sec-bg-01.webp" class="absolute w-auto right-20 top-0">
+  <img src = "../images/sec-bg-02.webp" class="w-auto absolute left-0 bottom-1">
+  
+   
+    <img src = "../images/key-sec-img-01.svg" class="pb-20 pt-20 mx-1 p-1 z-10">
+  
+    <span class="flex justify-end translate-y-1/4">
+      <img src = "../images/key-sec-img-02.webp" class="">
+    </span>
+  </div>
+</div>
+</section>
+    
+<section class=" relative bg-black pb-2">
+  <img src = "../images/sec-bg-08.webp" class = "left-2 top-0">
+  
+    <div class="max-w-7xl mx-auto px-4">
+    
+    
+    <!-- Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
+      
+      <!-- Item 1 -->
+      <div class="space-y-3">
+      <h2 class="text-5xl font-bold">10+</h2>
+      <p class="text-gray-300 text-lg">  <i class="fa fa-app-store p-1"></i>Application</p>
+      </div>
+
+
+      <!-- Item 2 -->
+      <div class="space-y-3">
+        <h2 class="text-5xl font-bold">200+</h2>
+        <p class="text-gray-300 text-lg"><i class="fas fa-file-alt p-1"></i>Pages</p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="space-y-3">
+        <h2 class="text-5xl font-bold">80+</h2>
+        <p class="text-gray-300 text-lg"><i class="fas fa-cloud p-1"></i>Widgets</p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="space-y-3">
+        <h2 class="text-5xl font-bold">400+</h2>
+        <p class="text-gray-300 text-lg"><i class="fa-solid fa-cubes p-1"></i>Components</p>
+      </div>
+
+    </div>
+
+  </div>
+  <img src = "../images/sec-bg-07.webp" class=" absolute bottom-0 right-0 w-16">
+   
+</section>
+
+<section id="inner" class="relative bg-white py-20 text-center">
+  <img src = "../images/sec-bg-09.webp" class=" absolute right-0 py-36">
+   <div>
+       <p class="text-orange-500">Inner Pages</p>
+       <div class="flex justify-center gap-1">
+        <div class="w-8 h-0.5 bg-black rounded-full"></div>
+        <div class="w-11 h-0.5 bg-gray-500 rounded-full"></div>
+       </div>
+       <h3 class="font-bold text-black text-2xl">Prebuilt Pages to Accelerate Your Workflow</h3>
+
+       <div class="flex flex-wrap justify-center gap-8 pt-5">
+          <button id="btns-1" class="btns bg-orange-500  border border-x-gray-200 text-white hover:bg-orange-500 rounded-lg px-6 py-2 font-semibold">Application</button>
+          <button id="btns-2" class="btns bg-white  border border-x-gray-200 text-black hover:bg-orange-500 hover:text-white transition duration-300 rounded-lg px-6 py-2 font-semibold">CRMS</button>
+          <button id="btns-3" class="btns bg-white  border border-x-gray-200 text-black hover:bg-orange-500 hover:text-white transition duration-300 rounded-lg px-6 py-2 font-semibold">Authentication</button>
+          <button id="btns-4" class="btns bg-white  border border-x-gray-200 text-black hover:bg-orange-500 hover:text-white transition duration-300 rounded-lg px-6 py-2 font-semibold">Other Modules</button>
+       </div>
+   </div>
+   
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mt-12 px-6">
+      <div class="card application bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-3 transition-transform duration-300">
+        <div class="flex justify-between mb-6">
+          <h4 class="text-xl font-bold text-gray-800">Chats</h4>
+          <i class="fas fa-arrow-right text-black text-xl size-5 hover:text-orange-400 transition"></i>
+        
+    </div>
+
+    <div class="bg-gray-100 rounded-xl p-4">
+      <img src="../images/inner-page-01.webp" 
+           class="rounded-lg">
+    </div>
+
+  </div>
+
+  <!-- Card 2 -->
+<a href = "Application/videocalls.html  ">
+  <div class="card application bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-2 transition-transform duration-300">
+    
+    <div class="flex justify-between  mb-6">
+      <h4 class="text-xl font-bold text-gray-800">Video Calls</h4>
+     <i class="fas fa-arrow-right text-black text-xl size-5 hover:text-orange-400 transition"></i>
+      
+    </div>
+
+    <div class="bg-gray-100 rounded-xl p-4">
+      <img src="../images/inner-page-02.webp" 
+           class="rounded-lg w-full">
+    </div>
+
+  </div>
+</a>
+
+  <!-- Card 3 -->
+<div class="card application bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-3 transition-transform duration-300">
+    
+    <div class="flex justify-between  mb-6">
+      <h4 class="text-xl font-bold text-gray-800">Voice Calls</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+    </div>
+
+    <div class="bg-gray-100 rounded-xl p-4">
+      <img src="../images/inner-page-03.webp" 
+           class="rounded-lg w-full">
+    </div>
+
+  </div>
+
+<!-- card 4 -->
+
+  <div class="card application bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-3 transition-transform duration-300">
+    <div class="flex justify-between  mb-6">
+    <h4 class="text-xl font-bold text-gray-800">Calendar</h4>
+    <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+   </div>
+
+   <div class="bg-gray-100 rounded-xl p-4">
+    <img src ="../images/inner-page-04.webp" class="rounded-lg w-full">
+   </div>
+  </div>
+
+  <!-- card 5 -->
+
+ <div class="card application bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-3 transition-transform duration-300 ">
+    <div class="flex justify-between items-center mb-6">
+    <h4 class="text-xl font-bold text-gray-800">Emails</h4>
+    <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+   </div>
+
+   <div class="bg-gray-100 rounded-xl p-4">
+    <img src ="../images/inner-page-05.webp" class="rounded-lg w-full">
+   </div>
+  </div>
+
+
+  <!-- card 6 -->
+
+  <div class="card application bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-3 transition-transform duration-300 ">
+    <div class="flex justify-between items-center mb-6">
+    <h4 class="text-xl font-bold text-gray-800">To Do</h4>
+    <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+   </div>
+
+   <div class="bg-gray-100 rounded-xl p-4">
+    <img src ="../images/inner-page-06.webp" class="rounded-lg w-full">
+   </div>
+  </div>
+
+
+  <!-- card 7 -->
+
+ <div class="card application bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-3 transition-transform duration-300">
+    <div class="flex justify-between items-center mb-6">
+    <h4 class="text-xl font-bold text-gray-800">File Manager</h4>
+    <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+   </div>
+
+   <div class="bg-gray-100 rounded-xl p-4">
+    <img src ="../images/inner-page-07.webp" class="rounded-lg w-full">
+   </div>
+  </div>
+
+
+  <!-- card 8 -->
+
+ <div class="card application bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-3 transition-transform duration-300 ">
+    <div class="flex justify-between items-center mb-6">
+    <h4 class="text-xl font-bold text-gray-800">Social Feed</h4>
+    <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+   </div>
+
+   <div class="bg-gray-100 rounded-xl p-4">
+    <img src ="../images/inner-page-08.webp" class="rounded-lg w-full">
+   </div>
+  </div>
+
+
+  <!-- card 9 -->
+
+  <div class="card application bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-3 duration-300 transition-transform ">
+    <div class="flex justify-between  mb-6">
+    <h4 class="text-xl font-bold text-gray-800">Invoices</h4>
+    <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+   </div>
+
+   <div class="bg-gray-100 rounded-xl p-4">
+    <img src ="../images/inner-page-09.webp" class="rounded-lg w-full">
+   </div>
+  </div>
+</div>
+
+<!-- CRM cards -->
+<div class="grid md:grid-cols-3 max-w-6xl gap-6 mx-auto px-6">
+  <div  class="card crm hidden bg-white rounded-xl border border-gray-200 shadow-sm p-6 hover:-translate-y-3 duration-300 transition-transform">
+         <div class="flex justify-between mb-6">
+          <h4 class="text-xl font-bold text-gray-800">Contacts</h4>
+          <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+         </div>
+        <div class="bg-gray-100 p-4 rounded-xl">
+          <img src = "../images/inner-page-10.jpg" class="rounded-lg w-full ">
+        </div>
+  </div>
+
+<div  class="card crm hidden bg-white rounded-xl border border-gray-200  shadow-sm hover:-translate-y-3 duration-300 transition-transform p-6">
+  <div class="flex justify-between mb-6">
+      <h4 class="text-xl font-bold text-gray-800">Companies</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+  </div>
+
+  <div class="bg-gray-100 rounded-xl p-4">
+    <img src = "../images/inner-page-11.jpg" class="w-full rounded-lg">
+  </div>
+</div>
+
+<div  class="card crm hidden bg-white rounded-xl border border-gray-200  shadow-sm hover:-translate-y-3 duration-300 transition-transform p-6">
+  <div class="flex justify-between mb-6">
+      <h4 class="text-xl font-bold text-gray-800">Deals</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+  </div>
+
+  <div class="bg-gray-100 rounded-xl p-4">
+    <img src = "../images/inner-page-12.jpg" class="w-full rounded-lg">
+  </div>
+</div>
+
+<div  class="card crm hidden bg-white rounded-xl border border-gray-200  shadow-sm hover:-translate-y-3 duration-300 transition-transform p-6">
+  <div class="flex justify-between mb-6">
+      <h4 class="text-xl font-bold text-gray-800">Leads</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+  </div>
+
+  <div class="bg-gray-100 rounded-xl p-4">
+    <img src = "../images/inner-page-13.jpg" class="w-full rounded-lg">
+  </div>
+</div>
+
+<div  class="card crm hidden bg-white rounded-xl p-6 border border-gray-200  shadow-sm hover:-translate-y-3 duration-300 transition-transform ">
+  <div class="flex justify-between mb-6">
+      <h4 class="text-xl font-bold text-gray-800">Pipeline</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+  </div>
+
+  <div class="bg-gray-100 rounded-xl p-4">
+    <img src = "../images/inner-page-14.jpg" class="w-full rounded-lg">
+  </div>
+</div>
+
+<div  class="card crm hidden bg-white rounded-xl border  border-gray-200  shadow-sm hover:-translate-y-3 duration-300 transition-transform p-6">
+  <div class="flex justify-between mb-6">
+      <h4 class="text-xl font-bold text-gray-800">Activities</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+  </div>
+
+  <div class="bg-gray-100 rounded-xl p-4">
+    <img src = "../images/inner-page-15.jpg" class="w-full rounded-lg">
+  </div>
+</div>
+</div>
+
+<!-- Authentication -->
+
+<div id = "authCards" class="grid md:grid-cols-3 max-w-6xl gap-6 mx-auto px-6">
+<a href="signup.html">
+  <div class="card authentication hidden bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 duration-300 transition-transform" data-page="404">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-xl font-bold text-gray-800">Sign Up</h4>
+        <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+   <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-16.jpg" class="w-full rounded-lg">
+   </div> 
+</div>
+</a>
+
+<a href="SignIn.html">
+<div class="card authentication hidden bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 duration-300 transition-transform" data-page="500">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-xl font-bold text-gray-800">Sign In</h4>
+        <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-17.jpg" class="w-full rounded-lg">
+   </div> 
+  </div>
+</a>
+<a href="fogot.html">
+<div class="card authentication hidden bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 duration-300 transition-transform">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-xl font-bold text-gray-800">Forgot Password</h4>
+        <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+   <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-18.jpg" class="w-full rounded-lg">
+   </div> 
+</div>
+</a>
+<a href="sign.html">
+<div class="card authentication hidden bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-xl text-gray-800 font-bold">Lock Screen</h4>
+        <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+  <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-19.webp" class="w-full rounded-lg">
+  </div> 
+</div>
+</a>
+<a href="Authentication.html">
+<div  class="card hidden authentication  cursor cursor-pointer bg-white rounded-xl  p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-xl font-bold text-gray-800">Error 404</h4>
+        <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-20.webp" class="w-full rounded-lg">
+   </div> 
+</div>
+</a>
+
+<a href="Error500.html">
+<div class="card hidden authentication cursor cursor-pointer bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-xl font-bold text-gray-800">Error 500</h4>
+       <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+  <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-21.webp" class="w-full rounded-lg">
+   </div> 
+</div>
+</a>
+<a href = "Maintainance.html">
+<div class="card authentication hidden cursor cursor-pointer bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-xl font-bold text-gray-800">Under Maintainance</h4>
+     <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-22.webp" class="w-full rounded-lg">
+   </div> 
+</div>
+</a>
+<a href="Coming.html">
+<div class="card authentication hidden bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-xl font-bold text-gray-800">Coming Soon</h4>
+         <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-23.jpg" class="w-full rounded-lg">
+   </div> 
+</div>
+</a>
+<a href="Const.html">
+<div class="card authentication hidden bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-gray-800 text-xl font-bold">Under Construction</h4>
+         <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-24.webp" class="w-full rounded-lg">
+   </div> 
+</div>
+</a>
+</div>
+
+<!-- Other Modules -->
+
+<div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+  <div class="card module hidden bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform duration-300">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-gray-800 text-xl font-bold">Employees</h4>
+         <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-25.webp" class="w-full rounded-lg">
+   </div>
+  </div>
+
+   <div class="card module hidden bg-white  rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform duration-300">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-gray-800 text-xl font-bold">Clients</h4>
+         <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-26.webp" class="w-full rounded-lg">
+   </div>
+  </div>
+  
+<div class="card module hidden bg-white  rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform duration-300">
+      <div class="flex justify-between mb-6">
+        <h4 class="text-gray-800 text-xl font-bold">Projects</h4>
+         <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-27.webp" class="w-full rounded-lg">
+   </div>
+  </div>
+<div class="card module hidden bg-white  rounded-xl p-6 border border-gray-200 shadow-sm hover:-translate-y-3 transition-transform duration-300">
+  <div class="flex justify-between mb-6">
+      <h4 class="text-gray-800 text-xl font-bold">Tasks</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+      </div>
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <img src = "../images/inner-page-28.jpg" class="w-full rounded-lg">
+   </div>
+  </div>
+
+<div class="card module hidden bg-white border rounded-xl p-6 border-gray-200 shadow-sm hover:-translate-y-3 transition-transform duration-300 ">
+    <div class="flex justify-between mb-6">
+      <h4 class="text-gray-800 text-xl font-bold">Tickets</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+    </div>
+
+    <div class="bg-gray-100 p-4 rounded-xl">
+      <img src="../images/inner-page-29.webp" class="w-full rounded-lg">
+    </div>
+  </div>
+
+<div class="card module hidden bg-white border rounded-xl p-6 border-gray-200 shadow-sm hover:-translate-y-3 transition-transform duration-300 ">
+    <div class="flex justify-between mb-6">
+      <h4 class="text-gray-800 text-xl font-bold">Attendance</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+    </div>
+  <div class="bg-gray-100 p-4 rounded-xl">
+      <img src="../images/inner-page-30.webp" class="w-full rounded-lg">
+    </div>
+  </div>
+
+<div class="card module hidden bg-white border rounded-xl p-6 border-gray-200 shadow-sm hover:-translate-y-3 transition-transform duration-300 ">
+    <div class="flex justify-between mb-6">
+      <h4 class="text-gray-800 text-xl font-bold">Jobs</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+    </div>
+
+    <div class="bg-gray-100 p-4 rounded-xl">
+      <img src="../images/inner-page-31.webp" class="w-full rounded-lg">
+    </div>
+  </div>
+
+<div class="card module hidden bg-white border rounded-xl p-6 border-gray-200 shadow-sm hover:-translate-y-3 transition-transform duration-300 ">
+    <div class="flex justify-between mb-6">
+      <h4 class="text-gray-800 text-xl font-bold">Candidate</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+    </div>
+
+    <div class="bg-gray-100 p-4 rounded-xl">
+      <img src="../images/inner-page-32.webp" class="w-full rounded-lg">
+    </div>
+  </div>
+
+<div class="card module hidden bg-white border rounded-xl p-6 border-gray-200 shadow-sm hover:-translate-y-3 transition-transform duration-300 ">
+    <div class="flex justify-between mb-6">
+      <h4 class="text-gray-800 text-xl font-bold">Settings</h4>
+      <i class="fas fa-arrow-right text-xl text-black size-5 hover:text-orange-400 transition"></i>
+    </div>
+
+    <div class="bg-gray-100 p-4 rounded-xl">
+      <img src="../images/inner-page-33.jpg" class="w-full rounded-lg">
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section  class="bg-orange-500">
+    <div class="bg-black -rotate-3 origin-center py-4">
+
+    <div class="animate-moveLeft flex whitespace-nowrap gap-12 text-white font-semibold">
+
+      <span>Maximize Productivity</span>
+      <span>Simplify Your Workflow</span>
+      <span>All-in-One HR Solution</span>
+      <span>Complete HR Control</span>
+      <span >
+        Streamline Recruitment
+      </span>
+      <span >
+        Unlock HR Excellence
+      </span>
+      <span >Elevate Team Efficiency</span>
+
+      <!-- Duplicate for seamless effect -->
+      <span>Maximize Productivity</span>
+      <span>Simplify Your Workflow</span>
+      <span>All-in-One HR Solution</span>
+      <span>Complete HR Control</span>
+      <span class=" px-3 py-1 rounded">
+        Streamline Recruitment
+      </span>
+      <span class=" px-3 py-1 rounded">
+        Unlock HR Excellence
+      </span>
+      <span>Elevate Team Efficiency</span>
+
+    </div>
+    </div>
+</section>
+
+<section  class="realtive bg-white py-14 text-center">
+<div >
+  <p class="text-orange-400">Layout</p>
+  <div class="flex justify-center gap-1">
+     <div class="w-5 h-0.5 rounded-full bg-black"></div>
+     <div class="w-10 h-0.5 rounded-full bg-green-300"></div>
+  </div>
+  <h3 class="text-black font-bold text-2xl">Explore Versatile Layouts</h3>
+</div>
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-6 gap-6 mt-1 px-1"> 
+  <div class="bg-peach-light rounded-xl border border-gray-200  p-6 hover:-translate-y-2 transition-transform duration-300">
+      <img src = "../images/layout-01.svg" class="w-auto rounded-lg p-2">
+      <p class="font-semibold text-black">Default</p>
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200  p-6 hover:-translate-y-2 transition-transform duration-300">
+      <img src = "../images/layout-02.svg" class="w-full rounded-lg p-2">
+      <p class="font-semibold text-black">Detached</p>
+  </div>
+
+
+  <div class="bg-peach-light rounded-xl border border-gray-200  p-6 hover:-translate-y-2 transition-transform duration-300">
+      <img src = "../images/layout-03.svg" class="w-full rounded-lg p-2">
+      <p class="font-semibold text-black">Horizontal Signal</p>
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200  p-6 hover:-translate-y-2 transition-transform duration-300">
+      <img src = "../images/layout-04.svg" class="w-full rounded-lg p-2">
+      <p class="font-semibold text-black">Menu Stacked</p>
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200  p-6 hover:-translate-y-2 transition-transform duration-300">
+      <img src = "../images/layout-05.svg" class="w-full rounded-lg p-2">
+      <p class="font-semibold text-black">Mini</p>
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200  p-6 hover:-translate-y-2 transition-transform duration-300">
+      <img src = "../images/layout-06.svg" class="w-full rounded-lg p-2">
+      <p class="font-semibold text-black">Transparent</p>
+  </div>
+   
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-07.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">RTL</p>
+
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-08.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Two Column</p>
+
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-09.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Modern Layout</p>
+
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-10.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Horizontal Overlay</p>
+
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-11.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Menu Aside</p>
+
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-12.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Bordered</p>
+
+  </div>
+
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-13.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Only Shadow</p>
+
+  </div>
+
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-14.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Without Header</p>
+
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-15.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Borderless</p>
+
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-16.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Default</p>
+
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-17.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Compact</p>
+
+  </div>
+
+  <div class="bg-peach-light rounded-xl border border-gray-200 p-6 hover:-translate-y-2 transition-transform duration-300">
+    <img src = "../images/layout-18.svg" class="w-full rounded-lg p-2">
+    <p class="font-semibold text-black">Hover View</p>
+
+  </div>
+
+
+</div>
+</section>
+
+<section id="pricing" class="relative bg-black py-6 text-center">
+  <p class="text-orange-500">Pricing</p>
+      <div class="flex justify-center gap-1">
+           <div class="w-4 h-0.5 bg-white rounded-full"></div>
+            <div class="w-8 h-0.5 bg-white rounded-full"></div>
+      </div>
+      <h3 class="text-2xl font-bold">Flexible Pricing Plans for Every Need</h3>
+      <img src = "../images/sec-bg-10.webp" class="absolute right-0 top-5">
+      <img src = "../images/sec-bg-11.webp" class="absolute top-10">
+
+
+<div>
+  <div class="max-w-3xl mx-auto  grid md:grid-cols-2 gap-6 mt-12 px-6">
+<div data-aos="slide-up" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out-cubic">
+    <div class="bg-white rounded-xl border-b transition-all duration-300
+        shadow-[0_0_20px_rgba(255,255,255,0.6)] p-6">
+    <h3 class="text-black text-2xl font-bold">Regular Liscense</h3>
+               <div class="p-2">
+               <h4 class="text-orange-500 text-5xl font-bold">$35</h4>
+               </div>
+               <h1 class="text-gray-500 p-3">Use,by you or one client, in a single end product which end users are not charged for.</h1>
+               <hr class="my-4 border text-gray-400 "/>
+
+
+
+            <div class=" text-left">
+              <li class="p-3 text-gray-500 list-none">
+                <i class="fas fa-circle-check text-green-300"></i>
+                Full Source Code
+              </li>
+
+               <li class="p-3 text-gray-500 list-none">
+                <i class="fas fa-circle-check text-green-300"></i>
+                Premium Supports
+              </li>
+
+               <li class="p-3 text-gray-500 list-none">
+                <i class="fas fa-circle-check text-green-300"></i>
+                LifeTime Updates
+              </li>
+
+               <li class="p-3 text-gray-500 list-none">
+                <i class="fas fa-circle-check text-green-300"></i>
+                Figma Design Style 
+              </li>
+
+               <li class="p-3 text-gray-500 list-none">
+                <i class="fas fa-circle-check text-green-300"></i>
+                 No Charge for end user
+              </li>
+              
+              <li class="p-3 text-gray-500 list-none">
+                <i class="fas fa-circle-check text-green-300"></i>
+                6 Months of Support (Envato Support Policy)
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-circle-check text-green-300"></i>
+                All Features Included
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-times-circle text-red-500"></i>
+                  For Commercial Project
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-times-circle text-red-500"></i>
+                  Priority Support
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-times-circle text-red-500"></i>
+                  White Label Branding
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-times-circle text-red-500"></i>
+                  SaaS Product Development
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-times-circle text-red-500"></i>
+                  Installation Support
+              </li>
+            </div>
+
+            <button class = "w-full bg-gray-800 hover:bg-black py-2 p-2">Choose Plan</button>
+    </div>
+  </div>
+         
+<!-- Card 2 -->
+    <div data-aos="slide-up" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out-cubic">
+        <div class="relative bg-white rounded-xl border border-gray-200 transition-all duration-300 
+                      p-6 shadow-[0_0_20px_rgba(255,255,255,0.6)]">
+              <div class="absolute -top-4 -translate-x-2 px-16">
+                <span class="bg-orange-100 text-orange-600 border border-orange-400 font-semibold rounded-full px-5 py-1">Recommended</span>
+                </div>
+               <h3 class="text-2xl text-black font-bold">Extended Liscense</h3>
+              
+               <div class="p-2">
+               <h4 class="text-5xl text-orange-500 font-bold">$499</h4>
+               </div>
+
+               <h1 class="text-gray-500 p-3 ">Use, by you or one client,in a single end product which end users can be charged for.</h1>
+
+               <hr class="my-4 border text-gray-400 "/>
+
+
+               <div class="text-left">
+                <li class="list-none text-gray-500 p-3">
+                  <i class="fas fa-circle-check text-green-300"></i>
+                   Full Source Code 
+                </li>
+                <li class="list-none p-3 text-gray-500">
+                  <i class="fas fa-circle-check text-green-300"></i>
+                  Premium Supports
+                </li>
+
+                <li class="list-none p-3 text-gray-500"><i class="fas fa-circle-check text-green-300"></i>
+                LifeTime Updates
+                </li>
+
+                <li class="list-none p-3 text-gray-500"><i class="fas fa-circle-check text-green-300"></i>
+                 Figma Design Style
+                </li>
+
+                <li class="list-none p-3 text-gray-500"><i class="fas fa-circle-check text-green-300"></i>
+                No Charge for end user
+                </li>
+                <li class="list-none p-3 text-gray-500"><i class="fas fa-circle-check text-green-300"></i> 
+                  6 Months of Support (Envato Support Policy) 
+                </li>
+
+                <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-circle-check text-green-300"></i>
+                All Features Included
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-circle-check text-green-300"></i>
+                  For Commercial Project
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-circle-check text-green-300"></i>
+                  Priority Support
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-circle-check text-green-300"></i>
+                  White Label Branding
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-circle-check text-green-300"></i>
+                  SaaS Product Development
+              </li>
+
+              <li class="p-3 text-gray-500 list-none font-serif">
+                <i class="fas fa-times-circle text-red-500"></i>
+                  Installation Support
+              </li>
+               </div>
+              
+               <button class = "w-full bg-gray-800 hover:bg-black py-2 p-2">Choose Plan</button>
+          </div>
+      </div>
+      
+      </div>
+    <img src = "../images/sec-bg-12.webp" class="bottom-0 px-14">
+  </div>
+</section>
+
+<section id="faq" class="bg-white py-12 text-center">
+   <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="100" data-aos-easing="ease-out-cubic">   
+  <div class="max-w-4xl mx-auto px-6">
+    <p class="text-orange-500">FAQ</p>
+    <div class="flex justify-center gap-1">
+      <div class="bg-gray-800 w-3 h-0.5 rounded-full"></div>
+      <div class="bg-green-200 w-4 h-0.5 rounded-full"></div>
+    </div>
+    <h3 class="text-black text-2xl font-bold">Frequently Asked Questions</h3>
+    <div class="border-b py-6">
+  <div class="items-center cursor-pointer accordian-btn" data-target="faq1">
+      <div class="flex items-center gap-4">
+  
+  <span class="text-3xl text-black font-semibold">01</span>
+
+  <h3 class="text-lg font-semibold text-black whitespace-nowrap">
+    What is Regular License?
+  </h3>
+
+  <!-- Move icon to end -->
+  <i class="fa fa-chevron-circle-down text-black ml-auto"></i>
+</div>
+
+  <p id="faq1" class="hidden text-left text-xl text-gray-500 pl-10 pt-3 font-semibold">
+  In Simple terms, Regular License means your end product is distributed for free to end users.
+</p>
+
+</div>
+    </div>
+ 
+
+  <div>
+
+    <div class="border-b py-6">
+      <div class="items-center cursor-pointer accordian-btn" data-target="faq2">
+    
+      <div class="flex items-center gap-4 ">
+            <span class="text-3xl text-black font-semibold ">02</span>
+          <div>
+            <h3 class="text-lg font-semibold text-black">What is Extended Liscense?</h3>
+          </div>
+          <i class="fa fa-chevron-circle-down text-black ml-auto"></i>
+      </div>
+
+       <p id="faq2" class="hidden text-left text-lg text-gray-500 pl-10 pt-3 font-semibold">
+ Extended License allows building a single end product that you can use or transfer to a client where end users of the product can be charged for. For example; A subscription or a fixed price SaaS application.
+</p>
+  
+</div>
+    </div>
+  </div>
+
+  <div>
+  
+    <div class="border-b py-6">
+      
+    <div class="items-center cursor-pointer accordian-btn" data-target="faq3">
+     
+      <div class="flex gap-4 items-center">
+        
+            <span class="text-3xl text-black font-semibold ">03
+          
+            </span>
+             
+          <div>
+            <h3 class="text-lg font-semibold text-black">What Will you get?</h3>
+          </div>
+      <i class="fa fa-chevron-circle-down text-black ml-auto"></i>   
+      </div>
+     <p id="faq3" class="hidden text-left text-lg text-gray-500 font-semibold pt-3">
+      All HTML files, All React files, CSS Files, SCSS Files, JS Files, Documentation, Reliable Technical Support System, Lifetime Template Updates, Template Documentation
+     </p> 
+          
+</div>
+    </div>
+       
+  </div>
+ </div>
+</div>
+</section>
+
+<section class="relative bg-gray-900  py-10 md:grid grid-cols-2 items-center justify-items-center ">
+
+  <div class="max-w-4xl text-center">
+    <h1 class="text-white font-bold text-3xl">
+      Looking For A Custom Design?
+    </h1>
+    <p class="absolute text-white p-2 ">
+      We are happy to customize your products based on your needs, send us a note!!!
+    </p>
+  </div>
+
+  <div class="flex justify-center md:mt-20">
+    <div class="flex items-center bg-white rounded-full w-[500px] px-8 py-5">
+    <input  id="email" type="email" placeholder="Enter Your Email here..." class="bg-transparent outline-none flex-1 text-gray-600">
+    <a href="#home"> 
+    <i class="icon fa fa-paper-plane  text-orange-500 text-2xl"></i>
+    </a> 
+  </div>
+</div>
+</section>
+
+
+<section class="relative bg-white py-10 text-center ">
+  
+    <div>
+      <img src = "../images/sec-bg-13.webp" class="px-6 top-0">
+      <p class="text-orange-600">Testinomial</p>
+      <div class="flex justify-center gap-1">
+      <div class="bg-gray-800 w-6 h-0.5 rounded-full"></div>
+      <div class="bg-green-200 w-12 h-0.5 rounded-full"></div>
+    </div>
+      <h1 class="text-black font-bold  text-2xl">What Our Client Are Saying</h1>
+    </div>
+<div>
+<div class= "max-w-6xl mx-auto overflow-hidden   relative cursor-grab">
+    <div id="slider" class="flex gap-4 transition-transform duration-300">
+      
+       <div class="min-w-[320px] bg-gray-100 rounded-xl border gap-4 border-gray-200 p-6 ">
+        <div class="text-left">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+      </div>
+       <p class="font-semibold text-gray-500 text-left">Effective Design and easy to implement in our product.These are things
+        i was looking for when looking at this product.I'm more than happy with the product,support Team was effective
+        in helping with elements i needed
+       </p>
+      <h3 class="absolute p-1 text-black font-bold ">Garaat</h3>
+    </div>
+
+     <div>
+       <div class="min-w-[320px] bg-gray-100 rounded-xl border border-gray-200 p-6">
+        <div class="text-left">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+      </div>
+       <p class="font-semibold text-gray-500 text-left">Effective Design and easy to ijmplement in our product.These are things
+        i was looking for when looking at this product.I'm more than happy with the product,support Team was effective
+        in helping with elements i needed
+      </p>
+      <h3 class="absolute p-1 text-black font-bold">Robertselva</h3>
+    </div>
+    </div>
+
+     <div>
+       <div class= "min-w-[320px] bg-gray-100 rounded-xl border border-gray-200 p-6">
+        <div class="text-left">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+      </div>
+       <p class="font-semibold text-gray-500 text-left">Effective Design and easy to ijmplement in our product.These are things
+        i was looking for when looking at this product.I'm more than happy with the product,support Team was effective
+        in helping with elements i needed</p>
+        <h3 class="absolute p-1 text-black font-bold">Lia Maillea</h3>
+      </div>
+    </div>
+
+    <div>
+       <div class= "min-w-[320px] bg-gray-100 rounded-xl border border-gray-200 p-6">
+        <div class="text-left">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+      </div>
+       <p class="font-semibold text-gray-500 text-left">Effective Design and easy to ijmplement in our product.These are things
+        i was looking for when looking at this product.I'm more than happy with the product,support Team was effective
+        in helping with elements i needed</p>
+        <h3 class="absolute p-1 text-black font-bold">Lia Maillea</h3>
+      </div>
+    </div>
+
+    <div>
+       <div class= "min-w-[320px] bg-gray-100 rounded-xl border border-gray-200 p-6">
+        <div class="text-left">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+      </div>
+       <p class="font-semibold text-gray-500 text-left">Effective Design and easy to ijmplement in our product.These are things
+        i was looking for when looking at this product.I'm more than happy with the product,support Team was effective
+        in helping with elements i needed</p>
+        <h3 class="absolute p-1 text-black font-bold">Lia Maillea</h3>
+      </div>
+    </div>
+
+    <div>
+       <div class= "min-w-[320px] bg-gray-100 rounded-xl border border-gray-200 p-6">
+        <div class="text-left">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+      </div>
+       <p class="font-semibold text-gray-500 text-left">Effective Design and easy to ijmplement in our product.These are things
+        i was looking for when looking at this product.I'm more than happy with the product,support Team was effective
+        in helping with elements i needed</p>
+        <h3 class="absolute p-1 text-black font-bold overflow-hidden">Lia Maillea</h3>
+      </div>
+    </div>
+
+    <div>
+       <div class= "min-w-[320px] bg-gray-100 rounded-xl border border-gray-200 p-6">
+        <div class="text-left">
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+        <i class="fa fa-star text-yellow-300"></i>
+      </div>
+       <p class="font-semibold text-gray-500 text-left">Effective Design and easy to ijmplement in our product.These are things
+        i was looking for when looking at this product.I'm more than happy with the product,support Team was effective
+        in helping with elements i needed</p>
+        <h3 class="absolute p-1 text-black font-bold overflow-hidden">Lia Maillea</h3>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<img src = "../images/sec-bg-14.webp" class="absolute bottom-0 right-0">
+</section>
+
+<section id="feature" class="relative bg-white py-10">
+  <div class="text-center">
+  <h4 class="text-orange-600">Features</h4>
+   <div class="flex justify-center gap-1">
+      <div class="bg-gray-800 w-5 h-0.5 rounded-full"></div>
+      <div class="bg-green-200 w-9 h-0.5 rounded-full"></div>
+    </div>
+  <h1 class="text-black text-2xl font-bold">React Features</h1>
+</div>
+
+<div class="grid md:grid-cols-6 max-w-7xl mx-auto gap-6 p-6">
+  <div class="bg-white rounded-xl border border-gray-200 p-6 relative overflow-hidden transform transition duration-300 hover:-translate-y-2">
+    <div>
+     <img src = "../images/features-01.svg" class="w-full rounded-lg p-4">
+    </div>
+    <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1  rounded-b-xl font-bold">React 18</h3>
+  </div>
+
+  <div class="bg-white rounded-xl border border-gray-200 p-6 transform transition duration-300 hover:-translate-y-2">
+    <div>
+     <img src = "../images/features-02.svg" class="w-full rounded-lg p-4">
+    </div>
+    <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">Scss</h3>
+  </div>
+
+  <div class="bg-white rounded-xl border border-gray-200 p-6 transform transition duration-300 hover:-translate-y-2">
+    <div>
+     <img src = "../images/features-03.svg" class="w-full rounded-lg p-4">
+    </div>
+     <h3 class="absolute bottom-0 left-0 text-white w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">React Redux</h3>
+  </div>
+
+  <div class="bg-white rounded-xl border border-gray-200 p-6 transform transition duration-300 hover:-translate-y-2">
+    <div>
+      <img src = "../images/features-04.svg" class="w-full rounded-lg p-4">
+    </div>
+    <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">Bootstrap 5</h3>
+  </div>
+
+  <div class="bg-white rounded-xl border border-gray-200 p-6 transform transition duration-300 hover:-translate-y-2">
+    <div>
+      <img src = "../images/features-05.svg" class="w-full rounded-lg p-4">
+    </div>
+    <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">React Hooks</h3>
+  </div>
+  
+  <div class="bg-white rounded-xl border border-gray-200 p-6 transform transition duration-300 hover:-translate-y-2">
+     <div>
+      <img src = "../images/features-06.svg" class="w-full rounded-lg p-4">
+     </div>
+
+     <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">React Bootstrap</h3>
+  </div>
+
+
+  <div class="bg-white rounded-xl border border-gray-200 p-6 transform transition duration-300 hover:-translate-y-2">
+     <div>
+      <img src ="../images/features-07.svg" class="w-full rounded-lg p-4">
+     </div>
+
+     <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">Apex Chart</h3>
+  </div>
+
+  <div class="bg-white rounded-xl border border-gray-200 p-6 transform transition duration-300 hover:-translate-y-2">
+     <div>
+      <img src ="../images/features-08.svg" class="w-full rounded-lg p-4">
+     </div>
+
+     <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">ANT DataTable</h3>
+  </div>
+
+  <div class="bg-white rounded-xl border border-gray-200 p-6 transform transition duration-300 hover:-translate-y-2">
+     <div>
+      <img src ="../images/features-09.svg" class="w-full rounded-lg p-4">
+     </div>
+
+     <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">ESLint</h3>
+  </div>
+
+  <div class="bg-white rounded-xl border border-200 p-6 transform transition duration-300 hover:-translate-y-2">
+    <div>
+      <img src  = "../images/features-10.svg" class="w-full rounded-lg p-4">
+    </div>
+  <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">React Router</h3>
+  </div>
+
+  <div class="bg-white rounded-xl border border-200 p-6 transform transition duration-300 hover:-translate-y-2">
+    <div>
+      <img src  = "../images/features-11.svg" class="w-full rounded-lg p-4">
+    </div>
+    <div class="bg-dark rounded-full bottom-0 p-1">
+  <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">Full Calendar</h3>
+  </div>
+  </div>
+
+   <div class="bg-white rounded-xl border border-200 p-6 transform transition duration-300 hover:-translate-y-2">
+    <div>
+      <img src  = "../images/features-12.svg" class="w-full rounded-lg p-4">
+    </div>
+    <div class="bg-dark rounded-full bottom-0 p-1">
+  <h3 class="absolute bottom-0 left-0 text-white  w-full text-center bg-gray-900 py-1 rounded-b-xl font-bold">NPM</h3>
+  </div>
+  </div>
+
+   
+</div>
+</section>
+<section class="relative bg-gray-900 py-14 text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="flex flex-wrap justify-center">
+        <img src="../images/elite.svg">
+        <div class=" text-gray-100 m-2">Elite Author</div>
+
+    <div class="flex flex-wrap justify-center pl-3">
+        <img src = "../images/trendsetter.svg">
+        <div class="text-gray-200 m-2">Trendsetter</div>
+    </div>
+
+    <div class="flex flex-wrap justify-center pl-3">
+        <img src = "../images/author.svg">
+        <div class="text-gray-200 m-2">Author Level</div>
+      </div>
+  </div>
+</div>
+
+<div class="m-10">
+  <h1 class="font-bold text-7xl">
+   Build Your Web App With
+  <br>
+  SmartHr React Dashboard
+  </h1>
+</div>
+<div>
+  <button class="bg-orange-400 rounded-lg px-6 py-2 text-white m-3  border-transparent hover:bg-orange-700 border hover:ring  hover:ring-white transition "><i class="fas fa-shopping-cart p-1"></i>Buy Template</button>
+  <button class="bg-green-400 rounded-lg px-6 py-2 text-white m-3    border-transparent hover:bg-green-700  border hover:ring hover:ring-white transition"><i class="fas fa-shopping-cart p-1"></i>Buy Full Product</button>
+</div>
+<img src = "../images/react-icon (1).svg" class="absolute top-0 py-10 px-20 left-10">
+
+<div class="pt-10">
+  <h1>Copyright 2026 © <span class="text-orange-600">Dreamtechnologies</span></h1>
+</div>
+</section>
+<script src ="./index.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,   
+    once: true        
+  });
+</script>
+</body>
+</html>

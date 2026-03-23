@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles can be added here */
+
+@keyframes moveLeft {
+    0% {
+        transform:translateX(0)
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}

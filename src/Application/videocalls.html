@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Calls</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gray-200">
+    <div class=" relative flex h-screen">
+       <!-- sidebar -->
+      <aside class="w-64 bg-white p-4 h-screen sticky top-0 overflow-y-auto">
+       <img src="../../images/logo.svg" class="mb-10">
+
+       <ul class=" top-16  absolute left-1">
+        <li class="menu-title text-gray-400 font-semibold uppercase text-xs mb-4">Main Menu</li>
+    </ul>
+
+
+    <ul class="space-y-4 pt-3">
+        <div id="dasMenu" class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Dashboard</span>
+          <p class="text-white bg-red-500 text-xs py-0 px-1 ml-10">Hot</p>
+             <i id="dsIcon" class="fa-solid fa-angle-down transition-transform duration-300"></i>
+        </div>
+
+    <!-- Sub Menu -->
+     <ul id="dsMenu" class="space-y-3 hidden ml-4 mt-2">
+          <li class="text-gray-400 hover:text-orange-400">Admin Dashboard</li>
+          <li class="text-gray-400 hover:text-orange-400">Employee Dashboard</li>
+          <li class="text-gray-400 hover:text-orange-400">Deals Dashboard</li>
+          <li class="text-gray-400 hover:text-orange-400">Leads Dashboard</li>
+          <li class="flex justify-between text-gray-400 hover:text-orange-400">
+           <span> Hr Dashboard</span>
+            <p class="text-white bg-red-600 text-xs  px-1 py-1 ml-2">New</p>
+          </li>
+        <li class="flex justify-between text-gray-400 hover:text-orange-400 whitespace-nowrap">
+            Payroll Dashboard
+            <p class=" text-white bg-red-600 text-xs px-1 py-1 ml-2">New</p>
+        </li>
+        <li class="flex justify-between text-gray-400 hover:text-orange-400 whitespace-nowrap">
+            <span class="right-3">Recruitment Dashboard</span>
+            <p class=" text-white bg-red-600 text-xs py-0 px-1 ml-2">New</p>
+        </li>
+        <li class="flex justify-between text-gray-400 hover:text-orange-400 whitespace-nowrap">
+            Attendance Dashboard
+            <p class=" text-white bg-red-600 text-xs py-0 px-1 ml-2">New</p>
+        </li>
+        <li class="flex justify-between text-gray-400 hover:text-orange-400 whitespace-nowrap">
+              Finance Dashboard
+              <p class="text-white bg-red-600 text-xs py-0 px-1 ml-2">New</p>
+        </li>
+        <li class="flex justify-between text-gray-400 hover:text-orange-400 whitespace-nowrap">
+              IT Admin Dashboard
+              <p class="text-white bg-red-600 text-xs py-0 px-1 ml-2">New</p>
+        </li>
+        <li class="flex justify-between text-gray-400 hover:text-orange-400 whitespace-nowrap">
+              Asset Dashboard
+              <p class="text-white bg-red-600 text-xs py-0 px-1 ml-2">New</p>
+        </li>
+        <li class="flex justify-between text-gray-400 hover:text-orange-400 whitespace-nowrap">
+              Help Desk Dashboard
+              <p class="text-white bg-red-600 text-xs py-0 px-1 ml-2">New</p>
+        </li>
+     </ul>
+    </ul>
+
+<ul class="space-y-4 pt-3">
+<!-- Application -->
+    <div id="appMenu"
+      class="font-semibold px-1 flex items-center justify-between cursor-pointer hover:bg-gray-200">
+      <span>Application</span>
+      <i id="arrowIcon" class="fa-solid fa-angle-down transition-transform duration-300"></i>
+    </div>
+
+    <!-- Sub Menu -->
+    <ul id="subMenu" class="space-y-2 hidden ml-4 mt-2">
+
+      <li class="text-gray-400 hover:text-orange-500 cursor-pointer">Chat</li>
+      <li>
+        <div id="callMenu"
+          class="text-orange-500 flex justify-between cursor-pointer">
+          <span>Calls</span>
+          <i id="callArrow" class="fa-solid fa-angle-down transition-transform duration-300"></i>
+        </div>
+
+<!-- Calls Submenu -->
+        <ul id="callSubMenu" class="space-y-2 hidden ml-4 mt-2">
+          <li class="text-gray-400 hover:text-orange-400">Voice Call</li>
+          <li class="text-orange-400">Video Call</li>
+          <li class="text-gray-400 hover:text-orange-400">Outgoing Call</li>
+          <li class="text-gray-400 hover:text-orange-400">Incoming Call</li>
+          <li class="text-gray-400 hover:text-orange-400">Call History</li>
+        </ul>
+
+      </li>
+
+      <li class="text-gray-400 hover:text-orange-500 cursor-pointer">Calendar</li>
+      <li class="text-gray-400 hover:text-orange-500 cursor-pointer">Email</li>
+      <li class="text-gray-400 hover:text-orange-500 cursor-pointer">To Do</li>
+      <li class="text-gray-400 hover:text-orange-500 cursor-pointer">Notes</li>
+      <li class="text-gray-400 hover:text-orange-500 cursor-pointer">Social Feed</li>
+      <li class="text-gray-400 hover:text-orange-500 cursor-pointer">File Manager</li>
+      <li class="text-gray-400 hover:text-orange-500 cursor-pointer">Kanban</li>
+      <li class="text-gray-400 hover:text-orange-500 cursor-pointer">Invoices</li>
+
+    </ul>
+
+
+
+</ul>
+
+<ul class="space-y-4 pt-3">
+      <div id="adminMenu" class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+        <span>Super Admin</span>
+        <i id="adminIcon" class="fa-solid fa-angle-down transition-transform duration-300"></i>
+      </div>
+    <!-- Sub Menu -->
+    <ul id="adMenu" class="space-y-3 hidden ml-5">
+        <li class="text-gray-400 hover:text-orange-500">Dashboard</li>
+        <li class="text-gray-400 hover:text-orange-500">Companies</li>
+        <li class="text-gray-400 hover:text-orange-500">Subscription</li>
+        <li class="text-gray-400 hover:text-orange-500">Packages</li>
+        <li class="text-gray-400 hover:text-orange-500">Domain</li>
+        <li class="text-gray-400 hover:text-orange-500">Purchase Transaction</li>
+        <li class="text-gray-400 hover:text-orange-500">Tenate Usage Metrics</li>
+        <li class="text-gray-400 hover:text-orange-500">Tenate Support Tickets</li>
+        <li class="flex justify-between text-gray-400 hover:text-orange-500">
+           Tickets
+        <i class="fa-solid fa-angle-down"></i>
+        </li>
+    </ul>
+</ul>
+
+   <ul class="absolute left-1">
+        <li class="menu-title text-gray-400 font-semibold uppercase text-xs pt-7">LAYOUT</li>
+    </ul> 
+
+    <ul class="space-y-6 pt-14">
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Horizontal</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Detached</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Modern</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Two Columns</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Hovered</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Boxed</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Horizontal Signal</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Horizontal Overlay</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Horizontal Box</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Menu Aside</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Transparent</span>
+        </li>
+
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Without Header</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>RTL</span>
+        </li>
+
+        <li class="font-semibold px-1 flex items-center justify-between w-full cursor-pointer hover:bg-gray-200">
+          <span>Dark</span>
+        </li>
+    </ul>
+
+      </aside>
+    <div class="flex-1 flex flex-col">
+    <header class="h-16 bg-white flex items-center  px-6 shadow w-full">
+      <i class="fa-solid fa-chevron-left text-xl hover:bg-gray-200 px-2 py-1"></i>
+
+      <div class="border border-gray-100 w-[300px] py-2 ml-10 flex justify-between">
+        <input type="text" placeholder="Search for Hrms" class="text-xs text-gray-400 p-2 focus:outline-none">
+        <div class="border border-gray-200 w-10 px-10 mr-3">
+          <p class="flex items-center justify-center">Ctrl+/</p>
+        </div>
+      </div>
+      <i class="fa-solid fa-grip p-5  hover:bg-gray-200"></i>
+      <i class="fa-solid fa-gear p-5"></i>
+ 
+
+      <div class=" flex gap-7 absolute right-14">
+        <i class="fa-solid fa-expand"></i>
+        <i class="fa-solid fa-table-cells"></i>
+        <i class="fa-solid fa-comment"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-bell"></i>
+        <img src="../../images/avatar-12.webp" class="rounded-full  w-7">
+      </div>
+    </header>
+
+  <div class="flex justify-between">
+    <div class=" space-y-3 p-10">
+      <h1 class="text-3xl font-bold text-gray-800">Calls</h1>
+
+      <div class="flex items-center space-x-2 text-gray-600 text-sm">
+        <span class="text-lg"><i class="fa-solid fa-house"></i></span>
+        <span class="text-2xl text-gray-400">&gt;</span>
+        <span class="text-lg">Application</span>
+        <span class="text-2xl text-gray-400">&gt;</span>
+        <span class="text-black">Calls</span>
+
+      </div>
+
+    </div>
+    <div class="space-y-3 p-14">
+      <input type="text" placeholder="search" class="border border-gray-200 bg-white py-2 p-2">
+      <button class="m-2 bg-orange-500 px-7 py-2 rounded hover:bg-orange-600">Add People</button>
+   
+    <i class="fa-solid fa-chevron-up text-sm text-gray-600 hover:bg-orange-500 py-2 px-2 hover:text-white rounded-lg"></i>
+   </div>
+    </div>
+  <div class="relative w-full h-screen overflow-hidden rounded-lg">
+  <img src="../../images/video.jpg" class="w-full h-full object-cover">
+
+
+
+  <div class="absolute flex justify-between bottom-6 left-1/3">
+    <div class="flex items-center gap-4 px-6 py-3 rounded-full bg-white/20  shadow-lg">
+      <button class="bg-white px-3 py-1"><i class="fa-solid fa-microphone text-xs hover:text-orange-400"></i></button>
+      <button class="bg-white px-3 py-1"><i class="fa-solid fa-video hover:text-orange-400"></i></button>
+      <button class="bg-red-700 px-5 py-4"><i class="fa-solid fa-phone hover:text-orange-500"></i></button>
+        <button class="bg-white px-3 py-1"><i class="fas fa-volume-up hover:text-orange-400"></i></button>
+         <button class="bg-white px-3 py-1"><i class="fa-solid fa-computer hover:text-orange-400"></i></button>
+        
+
+    </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  
+
+<script src="./app.js"></script> 
+</body>
+
+</html>
