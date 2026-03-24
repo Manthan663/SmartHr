@@ -127,10 +127,17 @@
         <li class="text-gray-400 hover:text-orange-500">Purchase Transaction</li>
         <li class="text-gray-400 hover:text-orange-500">Tenate Usage Metrics</li>
         <li class="text-gray-400 hover:text-orange-500">Tenate Support Tickets</li>
-        <li class="flex justify-between text-gray-400 hover:text-orange-500">
+        <div id="ticketMenu" class="flex justify-between text-gray-400 hover:text-orange-500 cursor-pointer">
            Tickets
-        <i class="fa-solid fa-angle-down"></i>
-        </li>
+        <i id="ticketIcon" class="fa-solid fa-angle-down"></i>
+        </div>
+
+      <ul id="callbMenu" class="space-y-2 hidden ml-4 mt-2">
+          <li class="text-gray-400 hover:text-orange-400">Agents</li>
+          <li class="text-gray-400 hover:text-orange-400">SLA policies</li>
+          <li class="text-gray-400 hover:text-orange-400">Esculation Rule</li>
+      </ul>
+
     </ul>
 </ul>
 
@@ -203,8 +210,17 @@
     </ul>
 
     <ul class="space-y-5 pt-14">
-      <li>Clients</li>
-      <li>Projects</li>
+      <li class="font-bold">Clients</li>
+      <div  id="Promenu" class="flex justify-between font-bold cursor-pointer">
+        Projects
+        <i id="projectIcon" class="fa-solid fa-angle-down mt-1"></i>
+      </div>
+    </ul>
+
+    <ul id="ProjectSubMenu" class="space-y-3 hidden ml-2">
+            <li class="text-gray-400 hover:text-orange-500">Projects</li>
+            <li class="text-gray-400 hover:text-orange-500">Tasks</li>
+            <li class="text-gray-400 hover:text-orange-500">TaskBoard</li>
     </ul>
 
       </aside>

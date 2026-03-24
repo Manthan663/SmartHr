@@ -40,3 +40,22 @@ AdminMenu.addEventListener("click",()=>{
     AdminIcon.classList.toggle("rotate-180");
 });
 
+
+const ticketMenu = document.getElementById("ticketMenu");
+const ticketIcon = document.getElementById("ticketIcon");
+const ticketSubMenu = document.getElementById("callbMenu");
+
+ticketMenu.addEventListener("click",()=>{
+  ticketSubMenu.classList.toggle("hidden");
+  ticketIcon.classList.toggle("rotate-180")
+})
+
+const promenu  =  document.getElementById("Promenu");
+const ProjectIcon = document.getElementById("projectIcon");
+const projectsubmenu = document.getElementById("ProjectSubMenu");
+
+promenu.addEventListener("click",()=>{
+  projectsubmenu.classList.toggle("hidden");
+  ProjectIcon.classList.toggle("rotate-180")
+
+})
