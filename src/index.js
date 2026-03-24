@@ -151,11 +151,9 @@ buttons.forEach(button=>{
         
         content.classList.toggle("hidden")
         if(icon.classList.contains("fa fa-chevron-circle-down")){
-        icon.classList.remove("fa fa-chevron-circle-down")
-        icon.classList.add("fad fa-chevron-circle-up")
+         icon.classList.toggle("rotate-180")
         } else{
-        icon.classList.add("fa fa-chevron-circle-down")
-        icon.classList.remove("fad fa-chevron-circle-up")
+           icon.classList.toggle("rotate-180")
         }
     })
 })

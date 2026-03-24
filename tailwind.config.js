@@ -23,10 +23,9 @@ module.exports = {
 
       animation : {
         moveLeft: 'moveLeft 20s linear infinite',
+        float: 'float 3s ease-in-out infinite'
       },
-      animation: {
-        float: 'float 3s ease-in-out infinite',
-      },
+      
    
     },
   },
